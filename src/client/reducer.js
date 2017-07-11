@@ -8,6 +8,7 @@ const initialSate = {
 const reducer = function clientReducer (state = initialSate, action) {
   switch (action.type) {
     case CLIENT_SET:
+
       return {
         id: action.token.userId,
         token: action.token,

@@ -19,7 +19,6 @@ const reducer = function widgetReducer (state = initialState, action) {
   switch (action.type) {
     case WIDGET_CREATING:
       return {
-        ...state,
         requesting: true,
         successful: false,
         messages: [{
